@@ -16,6 +16,9 @@ namespace CustomNamespace
             while (arguments.Contains("  "))
                 arguments = arguments.Replace("  ", " ");
             arguments.Trim();
+            
+            //remove @ symbol
+            arguments = arguments.Replace("@", "");
         
             // Convert spaces into "/t:"
             while (arguments.Contains(" "))
