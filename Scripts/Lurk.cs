@@ -20,6 +20,11 @@ namespace CustomNamespace
             string[] gameArray = {"games", "play"};
             if (SearchArray(gameArray, arguments))
                 return "game";
+            
+            // Check Sleep
+            string[] sleepArray = {"rest", "sleep", "bedtime", "bed"};
+            if (SearchArray(sleepArray, arguments))
+                return "sleep";
 
             // Return empty string if not special
             return " ";
