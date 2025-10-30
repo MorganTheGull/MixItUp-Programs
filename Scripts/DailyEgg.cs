@@ -16,7 +16,7 @@ namespace CustomNamespace
 
             // Cooking the Egg
             Random rnd = new Random();
-            int eggChoice = rnd.Next(1, 9); // (1,9) is a random int between 1 and 8.
+            int eggChoice = rnd.Next(0, 8); // (0,8) is a random int between 0 and 7.
 			string[] eggCook = 
 			{
 				"Perhaps we boil this egg. But how do we want the yolk?",
